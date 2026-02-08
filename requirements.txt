@@ -1,0 +1,8 @@
+# Core LangChain and LangGraph packages
+langchain>=0.1.0
+langgraph>=0.0.20
+langchain-groq>=0.1.0
+langchain-core>=0.1.0
+
+# Optional but recommended
+python-dotenv>=1.0.0
