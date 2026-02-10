@@ -1,0 +1,216 @@
+# 🔗 Agentic AI with LangChain & LangGraph
+
+<div align="center">
+
+### **Graph Over Chain: Scaling AI Agents Beyond LangChain Limits**
+
+</div>
+
+---
+
+## 📖 About This Repository
+
+This repository contains **practical code examples** demonstrating LangChain and LangGraph frameworks for building AI agents. It includes **15 runnable examples** organized into two parts:
+
+- **Part 1:** Foundational concepts (9 examples)
+- **Part 2:** Production-grade patterns (6 examples)
+
+All examples use the **Groq API** (free tier available) for fast LLM inference.
+
+---
+
+## 📂 Repository Structure
+
+```
+QuickStart/
+│
+├── Part1_Examples/                    # Foundational Concepts (9 examples)
+│   │
+│   ├── langchain_examples/            # 5 LangChain Examples
+│   │   ├── 01_basic_chain.py          # LCEL basics: prompt | llm
+│   │   ├── 02_multi_step_pipeline.py  # Composing operations
+│   │   ├── 03_agent_with_tools.py     # Dynamic tool selection
+│   │   ├── 04_composition.py          # Reusable components
+│   │   └── 05_memory.py               # Conversation history
+│   │
+│   └── langgraph_examples/            # 4 LangGraph Examples
+│       ├── 01_state_management.py     # Typed state objects
+│       ├── 02_workflow.py             # Graph orchestration
+│       ├── 03_streaming.py            # Real-time state inspection
+│       └── 04_composition.py          # Multi-agent systems
+│
+├── Part2_Examples/                    # Production Patterns (6 examples)
+│   ├── 01_simple_tool_calling.py      # Tool integration with bind_tools()
+│   ├── 02_middleware_example.py       # Request/response interception
+│   ├── 03_structured_output.py        # Type-safe responses
+│   ├── 04_content_blocks.py           # Multi-modal content
+│   ├── 05_complete_agent.py           # Error handling & retries
+│   └── 06_langgraph_example.py        # Advanced workflows
+│
+├── requirements.txt                   # Python dependencies
+├── .env                               # API keys (create this)
+└── README.md                          # This file
+```
+
+---
+
+## 🚀 Getting Started
+
+### **Prerequisites**
+
+- Python 3.8 or higher
+- Groq API key ([Get free key here](https://console.groq.com/))
+
+### **Step 1: Clone the Repository**
+
+```bash
+git clone https://github.com/linfieldlabs/Agentic_AI.git
+cd Agentic_AI/QuickStart
+```
+
+### **Step 2: Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Installed packages:**
+
+- `langchain` - Core LangChain framework
+- `langgraph` - Graph-based orchestration
+- `langchain-groq` - Groq API integration
+- `langchain-core` - Core abstractions
+- `python-dotenv` - Environment variables
+
+### **Step 3: Set Up API Key**
+
+Create a `.env` file in the root directory:
+
+```bash
+GROQ_API_KEY=your-groq-api-key-here
+```
+
+**Or set as environment variable:**
+
+```bash
+# Windows PowerShell
+$env:GROQ_API_KEY = "your-key-here"
+
+# Linux/Mac
+export GROQ_API_KEY="your-key-here"
+```
+
+### **Step 4: Run Examples**
+
+**Part 1 - LangChain Examples:**
+
+```bash
+cd Part1_Examples/langchain_examples
+python 01_basic_chain.py
+python 02_multi_step_pipeline.py
+python 03_agent_with_tools.py
+python 04_composition.py
+python 05_memory.py
+```
+
+**Part 1 - LangGraph Examples:**
+
+```bash
+cd Part1_Examples/langgraph_examples
+python 01_state_management.py
+python 02_workflow.py
+python 03_streaming.py
+python 04_composition.py
+```
+
+**Part 2 - Advanced Examples:**
+
+```bash
+cd Part2_Examples
+python 01_simple_tool_calling.py
+python 02_middleware_example.py
+python 03_structured_output.py
+python 04_content_blocks.py
+python 05_complete_agent.py
+python 06_langgraph_example.py
+```
+
+---
+
+## 📚 What's Included
+
+### **Part 1: Foundational Concepts**
+
+#### **LangChain Examples (5 files)**
+
+| File                        | Description                                          |
+| --------------------------- | ---------------------------------------------------- |
+| `01_basic_chain.py`         | Modern LCEL syntax with prompt templates             |
+| `02_multi_step_pipeline.py` | Chaining operations with RunnablePassthrough         |
+| `03_agent_with_tools.py`    | Agent with dynamic tool selection                    |
+| `04_composition.py`         | Building reusable chain components                   |
+| `05_memory.py`              | Conversation history with RunnableWithMessageHistory |
+
+#### **LangGraph Examples (4 files)**
+
+| File                     | Description                                    |
+| ------------------------ | ---------------------------------------------- |
+| `01_state_management.py` | Typed state objects with TypedDict             |
+| `02_workflow.py`         | Graph-based orchestration with nodes and edges |
+| `03_streaming.py`        | Real-time state inspection and streaming       |
+| `04_composition.py`      | Multi-agent coordination with subgraphs        |
+
+### **Part 2: Production-Grade Patterns**
+
+| File                        | Description                                 |
+| --------------------------- | ------------------------------------------- |
+| `01_simple_tool_calling.py` | Tool integration using bind_tools()         |
+| `02_middleware_example.py`  | Request/response logging and monitoring     |
+| `03_structured_output.py`   | Type-safe responses with Pydantic           |
+| `04_content_blocks.py`      | Handling multi-modal content                |
+| `05_complete_agent.py`      | Production agent with error handling        |
+| `06_langgraph_example.py`   | Advanced workflows with conditional routing |
+
+---
+
+## 📖 Companion Blog Post
+
+For detailed explanations and concepts, read the full blog post:
+
+**[Graph Over Chain: Scaling AI Agents Beyond LangChain Limits](https://github.com/linfieldlabs/Agentic_AI.git)**
+
+The blog covers:
+
+- LangChain vs LangGraph comparison
+- When to use each framework
+- Detailed concept explanations
+- Architecture patterns and best practices
+
+---
+
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**"ModuleNotFoundError: No module named 'langchain'"**
+
+```bash
+pip install -r requirements.txt
+```
+
+**"GROQ_API_KEY not found"**
+
+```bash
+# Create .env file with your API key
+echo "GROQ_API_KEY=your-key-here" > .env
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+**[⭐ Star this repo](https://github.com/linfieldlabs/Agentic_AI)** if you found it helpful!
+
+</div>
