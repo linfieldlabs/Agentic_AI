@@ -8,6 +8,15 @@
 
 ---
 
+🚀 **Start Here**  
+📖 Companion Blog Post —  
+**[Graph Over Chain: Scaling AI Agents Beyond LangChain Limits](https://github.com/linfieldlabs/Agentic_AI.git)**  
+Learn the concepts, comparisons, and architecture patterns used in this repo.
+
+---
+
+
+
 ## 📖 About This Repository
 
 This repository contains **practical code examples** demonstrating LangChain and LangGraph frameworks for building AI agents. It includes **15 runnable examples** organized into two parts:
@@ -18,6 +27,8 @@ This repository contains **practical code examples** demonstrating LangChain and
 All examples use the **Groq API** (free tier available) for fast LLM inference.
 
 ---
+
+
 
 ## 📂 Repository Structure
 
@@ -169,22 +180,8 @@ python 06_langgraph_example.py
 | `03_structured_output.py`   | Type-safe responses with Pydantic           |
 | `04_content_blocks.py`      | Handling multi-modal content                |
 | `05_complete_agent.py`      | Production agent with error handling        |
-| `06_langgraph_example.py`   | Advanced workflows with conditional routing |
-
----
-
-## 📖 Companion Blog Post
-
-For detailed explanations and concepts, read the full blog post:
-
-**[Graph Over Chain: Scaling AI Agents Beyond LangChain Limits](https://github.com/linfieldlabs/Agentic_AI.git)**
-
-The blog covers:
-
-- LangChain vs LangGraph comparison
-- When to use each framework
-- Detailed concept explanations
-- Architecture patterns and best practices
+| `06_langgraph_example.py`   | Advanced workflows with conditional ro
+## 
 
 ---
 
