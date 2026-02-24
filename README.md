@@ -9,13 +9,13 @@
 ---
 
 🚀 **Start Here**  
-📖 Companion Blog Post —  
-**[Graph Over Chain: Scaling AI Agents Beyond LangChain Limits](https://github.com/linfieldlabs/Agentic_AI.git)**  
-Learn the concepts, comparisons, and architecture patterns used in this repo.
+📖 Companion Blog Posts —
+
+1. **[Graph Over Chain: Scaling AI Agents Beyond LangChain Limits](https://github.com/linfieldlabs/Agentic_AI.git)**
+2. **[Graph Over Chain — Part 2: LangChain v1 & LangGraph v1 for Engineering-Grade Agentic AI](https://github.com/linfieldlabs/Agentic_AI.git)**  
+   Learn the concepts, comparisons, and architecture patterns used in this repo.
 
 ---
-
-
 
 ## 📖 About This Repository
 
@@ -27,8 +27,6 @@ This repository contains **practical code examples** demonstrating LangChain and
 All examples use the **Groq API** (free tier available) for fast LLM inference.
 
 ---
-
-
 
 ## 📂 Repository Structure
 
@@ -51,12 +49,12 @@ QuickStart/
 │       └── 04_composition.py          # Multi-agent systems
 │
 ├── Part2_Examples/                    # Production Patterns (6 examples)
-│   ├── 01_simple_tool_calling.py      # Tool integration with bind_tools()
-│   ├── 02_middleware_example.py       # Request/response interception
-│   ├── 03_structured_output.py        # Type-safe responses
-│   ├── 04_content_blocks.py           # Multi-modal content
-│   ├── 05_complete_agent.py           # Error handling & retries
-│   └── 06_langgraph_example.py        # Advanced workflows
+│   ├── 01_simple_agent.py             # Simple agent with tool calling
+│   ├── 02_lcel_and_middleware.py      # LCEL and agent middleware concepts
+│   ├── 03_structured_output.py        # Type-safe responses (Pydantic)
+│   ├── 04_aimessage_content_blocks.py # Message content blocks & reasoning
+│   ├── 05_langgraph_stategraph.py     # StateGraph basics (nodes/edges)
+│   └── 06_persistence_and_hitl.py     # Persistence & Human-in-the-loop
 │
 ├── requirements.txt                   # Python dependencies
 ├── .env                               # API keys (create this)
@@ -138,12 +136,12 @@ python 04_composition.py
 
 ```bash
 cd Part2_Examples
-python 01_simple_tool_calling.py
-python 02_middleware_example.py
+python 01_simple_agent.py
+python 02_lcel_and_middleware.py
 python 03_structured_output.py
-python 04_content_blocks.py
-python 05_complete_agent.py
-python 06_langgraph_example.py
+python 04_aimessage_content_blocks.py
+python 05_langgraph_stategraph.py
+python 06_persistence_and_hitl.py
 ```
 
 ---
@@ -173,15 +171,14 @@ python 06_langgraph_example.py
 
 ### **Part 2: Production-Grade Patterns**
 
-| File                        | Description                                 |
-| --------------------------- | ------------------------------------------- |
-| `01_simple_tool_calling.py` | Tool integration using bind_tools()         |
-| `02_middleware_example.py`  | Request/response logging and monitoring     |
-| `03_structured_output.py`   | Type-safe responses with Pydantic           |
-| `04_content_blocks.py`      | Handling multi-modal content                |
-| `05_complete_agent.py`      | Production agent with error handling        |
-| `06_langgraph_example.py`   | Advanced workflows with conditional ro
-## 
+| File                             | Description                                     |
+| -------------------------------- | ----------------------------------------------- |
+| `01_simple_agent.py`             | Simple agent with dynamic tool calling          |
+| `02_lcel_and_middleware.py`      | LCEL pipelines and agent middleware concepts    |
+| `03_structured_output.py`        | Type-safe responses (Pydantic/ProviderStrategy) |
+| `04_aimessage_content_blocks.py` | Handling message content blocks and reasoning   |
+| `05_langgraph_stategraph.py`     | Building agents using LangGraph StateGraph      |
+| `06_persistence_and_hitl.py`     | Advanced persistence and Human-in-the-Loop      |
 
 ---
 
